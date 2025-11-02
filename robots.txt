@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
-Sitemap: https://neeoviz-svg.github.io/neoviz1/sitemap.xml
-# NOTE: If you publish under a different user/repo, change the Sitemap URL above accordingly.
+
+Sitemap: https://neeoviz-svg.github.io/neoviz/sitemap.xml
+# NOTE: If you publish under a different user/repo, change the Sitemap URL
