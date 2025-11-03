@@ -1,19 +1,16 @@
-NEOVIZ — حزمة GitHub Pages (بدون دومين خاص)
+NEOVIZ — Cloudflare Pages Deploy Package
 
-الملفات:
-- index.html  ← نسخة موقعك (تشمل كود التحقق من Google إذا كنت قد أضفته)
-- robots.txt  ← مفعل الفهرسة + يوجّه خريطة الموقع إلى: https://neeoviz-svg.github.io/neoviz1/sitemap.xml
-- sitemap.xml ← محدد فيه رابط الموقع: https://neeoviz-svg.github.io/neoviz1/
-- _config.yml ← يعطل أي ثيم تلقائي من GitHub Pages
+Files included:
+- index.html (SEO optimized + JSON-LD + canonical "/")
+- robots.txt
+- sitemap.xml
 
-طريقة النشر:
-1) أنشئ مستودع عام جديد (مثلاً: neoviz1)، ثم: Add file → Upload files.
-2) ارفع هذه الملفات إلى جذر المستودع واضغط Commit changes.
-3) Settings → Pages:
-   - Source: Deploy from a branch
-   - Branch: main
-   - Folder: /(root)
-4) افتح الرابط:
-   https://neeoviz-svg.github.io/neoviz1/
+To deploy:
+1) Go to https://pages.cloudflare.com
+2) Click "Create a project" → choose "Upload assets"
+3) Upload the contents of this folder (or the ZIP below)
+4) After deploy, Cloudflare will give you a link like:
+   https://neoviz.pages.dev
+5) After that, update sitemap.xml <loc> to your final domain.
 
-ملاحظة: إذا اختلف اسم الحساب أو المستودع لديك، عدّل الرابط داخل robots.txt و sitemap.xml.
+Cloudflare automatically enables HTTPS, CDN caching, and SEO indexing.
