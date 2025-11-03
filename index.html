@@ -2,26 +2,31 @@
 <html lang="ar" dir="rtl">
 <head>
   <!-- إعدادات أساسية -->
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>شركة نيوفيز NEOVIZ — خدمات النظافة الشاملة | تنظيف المنازل والمكاتب بالرياض</title>
 
-  <!-- SEO -->
+  <!-- وصف مختصر (عربي + إنجليزي) -->
   <meta name="description" content="شركة نيوفيز NEOVIZ لخدمات النظافة الشاملة في الرياض تقدم أفضل خدمات التنظيف للمنازل، المكاتب، والمباني التجارية في المملكة العربية السعودية بجودة واحترافية عالية." />
+  <meta name="description" lang="en" content="NEOVIZ Cleaning Services – Professional home & office cleaning in Riyadh, Saudi Arabia." />
+
   <meta name="keywords" content="نيوفيز, NEOVIZ, تنظيف, خدمات النظافة, تنظيف منازل, تنظيف مكاتب, تنظيف تجاري, تنظيف بالرياض, شركات تنظيف" />
   <meta name="author" content="NEOVIZ" />
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+
+  <!-- canonical + hreflang -->
   <link rel="canonical" href="https://neeoviz-svg.github.io/neoviz/" />
   <link rel="alternate" href="https://neeoviz-svg.github.io/neoviz/" hreflang="ar-SA" />
+  <link rel="alternate" href="https://neeoviz-svg.github.io/neoviz/" hreflang="en" />
 
-  <!-- Google Search Console -->
+  <!-- Google Search Console (verification) -->
   <meta name="google-site-verification" content="y3uBTQl9y39q-0VKMpWQsX5jifMLgj3ngsQAJnCz3aY" />
 
-  <!-- Google Analytics (GA4) placeholder -->
+  <!-- Google Analytics (GA4) placeholder: استبدل G-XXXXXXXXXX بالمعرف الخاص بك -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag(){ dataLayer.push(arguments); }
     gtag('js', new Date());
     gtag('config', 'G-XXXXXXXXXX', { 'anonymize_ip': true });
   </script>
@@ -31,82 +36,95 @@
   <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
   <meta name="theme-color" content="#0078b7" />
 
-  <!-- Open Graph -->
+  <!-- Open Graph & Twitter -->
   <meta property="og:title" content="NEOVIZ — خدمات النظافة الشاملة بالرياض" />
-  <meta property="og:description" content="شركة نيوفيز NEOVIZ لخدمات النظافة الشاملة في الرياض تقدم أفضل خدمات التنظيف للمنازل، المكاتب، والمباني التجارية بجودة واحترافية عالية." />
+  <meta property="og:description" content="شركة نيوفيز NEOVIZ لخدمات النظافة الشاملة في الرياض — تنظيف منازل ومكاتب باحترافية وجودة." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://neeoviz-svg.github.io/neoviz/" />
   <meta property="og:image" content="https://neeoviz-svg.github.io/neoviz/logo.png" />
   <meta property="og:locale" content="ar_AR" />
 
-  <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="NEOVIZ — خدمات النظافة الشاملة بالرياض" />
-  <meta name="twitter:description" content="شركة نيوفيز لخدمات النظافة — تنظيف منازل ومكاتب بالرياض باحترافية وجودة." />
+  <meta name="twitter:description" content="شركة نيوفيز NEOVIZ لخدمات النظافة — تنظيف منازل ومكاتب بالرياض باحترافية وجودة." />
   <meta name="twitter:image" content="https://neeoviz-svg.github.io/neoviz/logo.png" />
 
-  <!-- Schema.org -->
+  <!-- Schema.org (Arabic + English) -->
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "NEOVIZ شركة نيوفيز",
-    "image": "https://neeoviz-svg.github.io/neoviz/logo.png",
-    "@id": "https://neeoviz-svg.github.io/neoviz/",
-    "url": "https://neeoviz-svg.github.io/neoviz/",
-    "telephone": "+966533529562",
-    "priceRange": "$$",
-    "address": {
-      "@type": "PostalAddress",
-      "addressCountry": "SA",
-      "addressRegion": "الرياض",
-      "addressLocality": "الرياض",
-      "streetAddress": "حي العليا"
-    },
-    "openingHoursSpecification": [
+    "@context":"https://schema.org",
+    "@graph":[
       {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
-        "opens": "08:00",
-        "closes": "22:00"
+        "@type":"LocalBusiness",
+        "name":"NEOVIZ شركة نيوفيز",
+        "image":"https://neeoviz-svg.github.io/neoviz/logo.png",
+        "@id":"https://neeoviz-svg.github.io/neoviz/",
+        "url":"https://neeoviz-svg.github.io/neoviz/",
+        "telephone":"+966533529562",
+        "priceRange":"$$",
+        "address":{
+          "@type":"PostalAddress",
+          "addressCountry":"SA",
+          "addressRegion":"الرياض",
+          "addressLocality":"الرياض",
+          "streetAddress":"حي العليا"
+        },
+        "openingHoursSpecification":[
+          {
+            "@type":"OpeningHoursSpecification",
+            "dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+            "opens":"08:00",
+            "closes":"22:00"
+          }
+        ],
+        "sameAs":[
+          "https://www.snapchat.com/add/neoviz.sa",
+          "https://www.instagram.com/neoviz.sa",
+          "https://www.tiktok.com/@neoviz.sa",
+          "https://x.com/neoviiz"
+        ],
+        "description":"شركة نيوفيز NEOVIZ لخدمات النظافة الشاملة بالرياض — تنظيف منازل ومكاتب باحترافية وجودة عالية."
+      },
+      {
+        "@type":"Organization",
+        "name":"NEOVIZ",
+        "url":"https://neeoviz-svg.github.io/neoviz/",
+        "sameAs":[
+          "https://www.snapchat.com/add/neoviz.sa",
+          "https://www.instagram.com/neoviz.sa",
+          "https://www.tiktok.com/@neoviz.sa",
+          "https://x.com/neoviiz"
+        ]
       }
-    ],
-    "sameAs": [
-      "https://www.snapchat.com/add/neoviz.sa",
-      "https://www.instagram.com/neoviz.sa",
-      "https://www.tiktok.com/@neoviz.sa",
-      "https://x.com/neoviiz"
-    ],
-    "description": "شركة نيوفيز NEOVIZ لخدمات النظافة الشاملة بالرياض — تنظيف منازل ومكاتب باحترافية وجودة عالية."
+    ]
   }
   </script>
 
-  <!-- خطوط -->
+  <!-- خطوط وأيقونة -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet" />
-
-  <!-- favicon -->
   <link rel="icon" type="image/png" href="logo.png" />
 
-  <!-- ======= CSS مدمج (يحافظ على الشكل الأصلي) ======= -->
+  <!-- === CSS (مدمج لضمان عدم التأثير على الملفات الخارجية) === -->
   <style>
     :root{
       --primary:#0078b7;
       --accent:#005f90;
       --light:#f9fafb;
       --muted:#666;
+      --maxw:1100px;
     }
     *{box-sizing:border-box}
-    body{margin:0;font-family:'Cairo',sans-serif;background:var(--light);color:#111;line-height:1.7;-webkit-font-smoothing:antialiased}
-    header{background:var(--primary);color:#fff;padding:28px 16px;text-align:center}
+    body{margin:0;font-family:'Cairo',sans-serif;background:var(--light);color:#111;line-height:1.7}
+    header{background:var(--primary);color:#fff;text-align:center;padding:28px 16px}
     .brand{display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap}
     .brand img{height:64px;width:auto;display:block}
     header h1{margin:0;font-size:24px;font-weight:700;line-height:1.1}
     header p.lead{margin:6px 0 0;opacity:.95}
     nav.site-nav{margin-top:14px;display:flex;justify-content:center;gap:18px;flex-wrap:wrap;font-weight:600}
     nav.site-nav a{color:#fff;text-decoration:none}
-    main{max-width:1100px;margin:28px auto;padding:0 18px}
+    main{max-width:var(--maxw);margin:28px auto;padding:0 18px}
     .hero{background:linear-gradient(180deg, rgba(0,0,0,0.03), transparent);border-radius:10px;padding:18px;display:flex;gap:18px;align-items:center;justify-content:space-between;flex-wrap:wrap}
     .hero .hero-text{flex:1;min-width:260px}
     .hero h2{color:var(--primary);margin:0 0 8px;font-size:20px}
@@ -114,28 +132,34 @@
     .card{background:#fff;padding:16px;border-radius:8px;box-shadow:0 4px 14px rgba(15,15,15,0.04)}
     .card h3{margin:0 0 8px;color:var(--accent);font-size:16px}
     footer{margin-top:30px;background:#fff;padding:18px;text-align:center;color:var(--muted);border-top:1px solid #eee}
-    /* social icons row */
-    .socials{display:flex;gap:12px;justify-content:center;align-items:center;padding-top:8px}
+    /* social icons row (one horizontal line) */
+    .socials{display:flex;gap:10px;justify-content:center;align-items:center;padding-top:8px}
     .socials a{display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:8px;background:#fff;border:1px solid #eee;color:var(--muted);text-decoration:none}
     .socials a svg{width:20px;height:20px;display:block}
-    /* whatsapp floating button */
-    .whatsapp-fab{position:fixed;right:18px;bottom:18px;width:56px;height:56px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 18px rgba(37,211,102,0.25);z-index:9999}
-    .whatsapp-fab a{display:block;width:100%;height:100%;line-height:0}
+    /* individual brand colors */
+    .socials a.snap{background:linear-gradient(90deg,#fffc00,#ffd400);color:#000}
+    .socials a.ig{background:linear-gradient(45deg,#feda75,#d62976,#962fbf,#4f5bd5);color:#fff}
+    .socials a.tt{background:linear-gradient(90deg,#000,#000);color:#fff}
+    .socials a.x{background:#000;color:#fff}
+    /* whatsapp floating button remains as in original design - keep visible but non-intrusive */
+    .whatsapp-fab{position:fixed;right:18px;bottom:18px;width:56px;height:56px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 18px rgba(37,211,102,0.18);z-index:9999}
+    .whatsapp-fab a{display:block;width:100%;height:100%}
     .whatsapp-fab svg{width:28px;height:28px;fill:#fff}
-    /* responsive */
     @media (max-width:640px){
       header h1{font-size:20px}
       .brand img{height:56px}
       .whatsapp-fab{right:12px;bottom:12px;width:48px;height:48px}
     }
   </style>
-  <!-- ======= نهاية CSS ======= -->
+  <!-- === نهاية CSS === -->
 </head>
 
 <body>
+  <!-- ======= الجسم (الشكل يبقى مطابقًا للأصلي) ======= -->
   <header class="site-header" role="banner">
     <div class="brand" aria-label="NEOVIZ brand">
-      <img data-src="logo.png" alt="NEOVIZ Logo" class="lazy" />
+      <!-- صورة الشعار تستخدم lazy-loading (data-src) للحفاظ على الأداء -->
+      <img class="lazy" data-src="logo.png" alt="شعار شركة نيوفيز لخدمات النظافة" />
       <div>
         <h1>شركة نيوفيز NEOVIZ لخدمات النظافة الشاملة</h1>
         <p class="lead">نظافة متكاملة — احترافية، سرعة، وضمان جودة</p>
@@ -206,29 +230,29 @@
 
   <footer role="contentinfo">
     <div class="socials" aria-label="روابط التواصل الاجتماعي">
-      <a href="https://www.snapchat.com/add/neoviz.sa" target="_blank" rel="noopener noreferrer" aria-label="Snapchat">
-        <!-- Snapchat icon -->
+      <!-- Snapchat (yellow) -->
+      <a class="snap" href="https://www.snapchat.com/add/neoviz.sa" target="_blank" rel="noopener noreferrer" aria-label="Snapchat">
         <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
           <path fill="currentColor" d="M12 2c1.8 0 3.2.7 4.2 1.5.8.6 1.4 1.5 1.6 2.6.2 1 .2 2.1.2 3.1 0 2.9 1.6 4.1 1.6 4.1s-1.1 1.1-2.9 1.8c-1 .4-1.6 1.1-1.7 2.4-.1 1.4.2 2.3.2 2.3s-1.1-.2-2.3-.2c-.9 0-1.3.5-2.1.5-.8 0-1.2-.5-2.1-.5-1.2 0-2.3.2-2.3.2s.3-.9.2-2.3c-.1-1.3-.7-2-1.7-2.4-1.9-.7-2.9-1.8-2.9-1.8s1.6-1.2 1.6-4.1c0-1 .1-2.1.2-3.1.2-1.1.8-2 1.6-2.6C8.8 2.7 10.2 2 12 2z"/>
         </svg>
       </a>
 
-      <a href="https://www.instagram.com/neoviz.sa" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-        <!-- Instagram icon -->
+      <!-- Instagram (gradient) -->
+      <a class="ig" href="https://www.instagram.com/neoviz.sa" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
         <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
           <path fill="currentColor" d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm5 5.5A4.5 4.5 0 1 0 16.5 12 4.5 4.5 0 0 0 12 7.5zm6.2-.9a1.1 1.1 0 1 0 1.1 1.1 1.1 1.1 0 0 0-1.1-1.1zM12 9.5A2.5 2.5 0 1 1 9.5 12 2.5 2.5 0 0 1 12 9.5z"/>
         </svg>
       </a>
 
-      <a href="https://www.tiktok.com/@neoviz.sa" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
-        <!-- TikTok icon -->
+      <!-- TikTok (dark) -->
+      <a class="tt" href="https://www.tiktok.com/@neoviz.sa" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
         <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
           <path fill="currentColor" d="M16 3h2v6a4 4 0 1 1-4-4v-2zm-8 8a4 4 0 1 0 4 4v-2a2 2 0 1 1-2-2H8z"/>
         </svg>
       </a>
 
-      <a href="https://x.com/neoviiz" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)">
-        <!-- X / Twitter icon -->
+      <!-- X (new logo, black) -->
+      <a class="x" href="https://x.com/neoviiz" target="_blank" rel="noopener noreferrer" aria-label="X">
         <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
           <path fill="currentColor" d="M22 5.9c-.6.3-1.2.5-1.9.6.7-.4 1.2-1.1 1.5-1.8-.6.4-1.4.7-2.1.9C18.8 4.8 17.8 4 16.6 4c-1.8 0-3.3 1.5-3.3 3.3 0 .3 0 .6.1.9C9.7 8.1 6.4 6.3 4 3.6c-.4.6-.6 1.3-.6 2 0 1.2.6 2.3 1.6 2.9-.5 0-1-.1-1.4-.4 0 1.9 1.4 3.4 3.2 3.7-.4.1-.8.2-1.2.2-.3 0-.6 0-.9-.1.6 1.9 2.4 3.3 4.5 3.3-1.6 1.2-3.6 1.9-5.8 1.9-.4 0-.8 0-1.2-.1 2 1.3 4.4 2 7 2 8.4 0 13-7 13-13v-.6c.9-.7 1.6-1.6 2.1-2.6-.8.4-1.6.6-2.5.8z"/>
         </svg>
@@ -238,10 +262,9 @@
     <p style="margin-top:12px">© 2025 شركة نيوفيز NEOVIZ — جميع الحقوق محفوظة</p>
   </footer>
 
-  <!-- WhatsApp floating button (opens chat) -->
+  <!-- WhatsApp floating button (يبقى كما هو، يفتح رقمك) -->
   <div class="whatsapp-fab" aria-hidden="false">
     <a href="https://wa.me/966533529562" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
-      <!-- WhatsApp SVG icon -->
       <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
         <path d="M20.52 3.48A11.87 11.87 0 0012 .75C6 0.75 1.5 5.25 1.5 11.25c0 1.98.54 3.9 1.56 5.58L.75 23.25l6.9-2.28a11.25 11.25 0 005.55 1.5c6 0 10.5-4.5 10.5-10.5 0-3-1.17-5.82-3.93-7.99zM12 21c-1.8 0-3.54-.45-5.07-1.27l-.36-.21-4.11 1.36 1.36-3.96-.21-.36A8.25 8.25 0 013 11.25C3 7.2 6.42 3.75 12 3.75c2.1 0 4.05.66 5.64 1.86A7.14 7.14 0 0119.5 11.25c0 4.14-3.36 7.5-7.5 7.5z" fill="#fff"/>
         <path d="M17.1 14.25c-.3-.15-1.77-.87-2.04-.97-.27-.09-.47-.15-.67.15-.18.3-.66.97-.81 1.16-.15.18-.3.21-.57.07-.27-.15-1.14-.42-2.18-1.35-.81-.72-1.35-1.62-1.5-1.89-.15-.27-.02-.42.12-.57.12-.12.27-.3.41-.45.15-.15.18-.27.3-.45.12-.18.06-.33-.03-.48-.09-.15-.67-1.62-.92-2.22-.24-.57-.48-.48-.66-.48-.18 0-.39-.03-.6-.03-.21 0-.57.09-.87.42-.3.33-1.14 1.12-1.14 2.73 0 1.59 1.17 3.12 1.33 3.33.15.21 2.3 3.5 5.58 4.9 3.27 1.36 3.27.91 3.87.84.6-.06 1.77-.72 2.02-1.41.24-.69.24-1.29.18-1.41-.06-.12-.24-.18-.54-.33z" fill="#fff"/>
@@ -249,17 +272,16 @@
     </a>
   </div>
 
-  <!-- ======= Lazy-loading script (lightweight) ======= -->
+  <!-- ======= Lazy-loading script (IntersectionObserver + fallback) ======= -->
   <script>
-    // Simple lazy loader for images with class "lazy" using IntersectionObserver + fallback
     (function(){
       var lazyImages = [].slice.call(document.querySelectorAll('img.lazy'));
       if('IntersectionObserver' in window){
-        let io = new IntersectionObserver(function(entries, observer){
+        var io = new IntersectionObserver(function(entries, observer){
           entries.forEach(function(entry){
             if(entry.isIntersecting){
-              let img = entry.target;
-              img.src = img.dataset.src;
+              var img = entry.target;
+              if(img.dataset.src){ img.src = img.dataset.src; }
               img.classList.remove('lazy');
               observer.unobserve(img);
             }
@@ -267,8 +289,8 @@
         }, {rootMargin: "200px 0px"});
         lazyImages.forEach(function(img){ io.observe(img); });
       } else {
-        // Fallback: load all images
-        lazyImages.forEach(function(img){ img.src = img.dataset.src; img.classList.remove('lazy'); });
+        // fallback: load all
+        lazyImages.forEach(function(img){ if(img.dataset.src){ img.src = img.dataset.src; } img.classList.remove('lazy'); });
       }
     })();
   </script>
