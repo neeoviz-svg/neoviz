@@ -1,4 +1,3 @@
 User-agent: *
 Allow: /
-
-Sitemap: https://neeoviz-svg.github.io/neoviz/sitemap.xml
+Sitemap: /sitemap.xml
